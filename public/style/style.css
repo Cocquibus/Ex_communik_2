@@ -1,0 +1,209 @@
+/*initialisation*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Ubuntu:wght@300&display=swap');
+body, ul{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: ubuntu;
+}
+ul{
+    list-style: none;
+}
+/*media queries*/
+@media (min-width:360px) and (max-width:768px){
+    body{
+        font-size: 0.6rem;
+    }
+    header img{
+        display: none;
+    }
+    header{
+        grid-template-columns: 1fr !important;
+    }
+    button{
+        width: 200px !important;
+        font-size: 1.2rem !important;
+    }
+    .section_bottom{
+        flex-direction: column;
+    }
+    .presentation_centrage{
+        grid-template-columns: 1fr !important;
+    }
+    .presentation_centrage p{
+        font-size: large;
+        margin-left: 50px !important;
+        margin-right: 50px !important;
+    }
+    .presentation_centrage img{
+        margin: 0px !important;
+        margin-left: 50% !important;
+        margin-top: 30px !important;
+        transform: translate(-50%, 0%);
+    }
+    section:nth-child(1){
+        height: 100px !important;
+    }
+    section:nth-child(1) img{
+        width: 100px;
+        margin: 0px !important;
+        margin-top: 20px !important;
+    }
+    section:nth-child(1) h1{
+        font-size: 1rem !important;
+        margin-left: 20px;
+        margin-right: 0px !important;
+    }
+    section:nth-child(1) h2{
+        font-size: 0.7rem !important;
+        margin-left: 20px;
+    }
+    footer{
+        grid-template-columns: 1fr !important;
+        text-align: center;
+        height: 850px !important;
+
+    }
+    .footer_centrage{
+        grid-template-columns: 1fr !important;
+    }
+    .footer_centrage img{
+        margin: 0px !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        width: 80px;
+    }
+    .footer_texte{
+        grid-column: 1/2 !important;
+        margin: 0px !important;
+    }
+}
+@media (min-width:768px) and (max-width:1024px){
+    header img{
+        display: none;
+    }
+    header{
+        grid-template-columns: 1fr !important;
+    }
+}
+@media (min-width:1024px){
+    body{
+        width: 1024px;
+        margin: auto;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+}
+/*disposition des grilles*/
+/*header*/
+header{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    background-color: #1A1A1D;
+}
+nav ul{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6,1fr);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+header>div:nth-child(1){
+    display: grid;
+    align-items: center;
+    margin-left: 20px;
+}
+/*section*/
+/*section 1*/
+section:nth-child(1){
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    background-color: #334D5C;
+    padding: 80px;
+    height: 170px;
+}
+section:nth-child(1) img{
+    margin-top: 30px;
+}
+section:nth-child(1) h1{
+    font-size: 3rem;
+    color: white;
+}
+section:nth-child(1) h2{
+    font-size: 2rem;
+    color: white;
+}
+/*section deux*/
+.btn_centrage{
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+}
+.presentation_centrage{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+}
+.presentation_centrage img{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.presentation_centrage p{
+    margin-top: 60px;
+    margin-right: 140px;
+}
+.section_bottom{
+    background-color:#EAE3D6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.section_bottom img{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 80px;
+}
+.img_bottom_ml{
+    margin-left: 55px;
+    margin-right:55px;
+}
+/*Decoration*/
+nav a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    border: none;
+    background-color: #334D5C;
+    color: white;
+    font-size: 4rem;
+    padding: 20px;
+    width: 400px;
+}
+nav li{
+    margin: 5px;
+    text-align: center;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #1A1A1D;
+    color: white;
+    height: 300px;
+}
+footer img{
+    width: 60px;
+}
+.footer_centrage{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.footer_centrage img{
+    margin-left: 30px;
+}
+.footer_texte{
+    grid-column: 1/4;
+    margin: 40px;
+}
